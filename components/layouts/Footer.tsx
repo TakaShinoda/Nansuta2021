@@ -11,7 +11,7 @@ export const Footer = () => {
             component="div"
             sx={{ flexGrow: 1, color: '#fff' }}
           >
-            xxx
+            footer
           </Typography>
         </Box>
       </Container>
