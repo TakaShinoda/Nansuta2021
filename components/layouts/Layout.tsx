@@ -17,7 +17,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <Header />
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 
