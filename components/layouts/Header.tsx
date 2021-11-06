@@ -28,9 +28,9 @@ export const Header = () => {
               component="p"
               sx={{ textAlign: 'right', flexGrow: 0.1 }}
             >
-              <Link href="/service">
+              <Link href="/">
                 <a style={{ textDecoration: 'none', color: 'inherit' }}>
-                  Service
+                  Top
                 </a>
               </Link>
             </Typography>
@@ -39,9 +39,9 @@ export const Header = () => {
               component="p"
               sx={{ textAlign: 'right', flexGrow: 0.1 }}
             >
-              <Link href="/company">
+              <Link href="/youtube">
                 <a style={{ textDecoration: 'none', color: 'inherit' }}>
-                  Company
+                  YouTube
                 </a>
               </Link>
             </Typography>
