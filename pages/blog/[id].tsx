@@ -1,4 +1,5 @@
 import { client } from '../../lib/client'
+import { GetStaticProps, GetStaticPaths } from 'next'
 
 const BlogId = ({ blog }) => (
   <main>
@@ -16,14 +17,16 @@ const BlogId = ({ blog }) => (
   </main>
 )
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  // getStaticPathsのメソッドの中ではビルド時に作成するページのパス一覧を作成し、pathsでreturnする必要がある
   const data = await client.get({ endpoint: 'blog' })
   const paths = data.contents.map((content) => `/blog/${content.id}`)
   return { paths, fallback: false }
 }
 
-export const getStaticProps = async (context) => {
-  const id = context.params.id
+export const getStaticProps: GetStaticProps = async (context) => {
+  console.log(context)
+  const id = context.params.id as string
   const blog = await client.get({ endpoint: 'blog', contentId: id })
   return {
     props: {
