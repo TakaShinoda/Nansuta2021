@@ -15,7 +15,7 @@ const Blog = ({ blog }) => (
     <h1>Blog</h1>
     {blog.map((blog) => (
       <Link href={`/blog/${blog.id}`} key={blog.id}>
-        <Card sx={{ maxWidth: 345, margin: 2, float: 'left' }}>
+        <Card sx={{ maxWidth: 345, margin: 2, display: 'inline-block'}}>
           <CardActionArea>
             <CardMedia
               component="img"
