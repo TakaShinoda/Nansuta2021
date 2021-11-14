@@ -1,15 +1,19 @@
-import Link from 'next/link'
 import Layout from '../components/layouts/Layout'
+import { Box } from '@mui/material'
 
 const Contact = () => (
   <Layout title="Nansuta Home Page">
     <h1>Contact</h1>
-    <p>This is the contact page</p>
-    <p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </p>
+    <Box sx={{ textAlign: 'center'}}>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScwoOo0tJU9w9X1BRXGR4IImJA0LklmNrCSZiSjq77xkxtt6w/viewform?embedded=true"
+        width="750"
+        height="1000"
+        frameBorder="0"
+      >
+        読み込んでいます…
+      </iframe>
+    </Box>
   </Layout>
 )
 
