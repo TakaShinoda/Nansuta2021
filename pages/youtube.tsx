@@ -9,8 +9,8 @@ const Youtube = () => (
         sx={{ textAlign: 'center', margin: '50px', display: 'inline-block' }}
       >
         <iframe
-          width="660"
-          height="415"
+          width="590"
+          height="345"
           src="https://www.youtube.com/embed/kKFm3fiBp9Q"
           title="YouTube video player"
           frameBorder="0"
@@ -22,8 +22,8 @@ const Youtube = () => (
         sx={{ textAlign: 'center', margin: '50px', display: 'inline-block' }}
       >
         <iframe
-          width="660"
-          height="415"
+          width="590"
+          height="345"
           src="https://www.youtube.com/embed/2_6t3NdHM30"
           title="YouTube video player"
           frameBorder="0"
@@ -35,8 +35,8 @@ const Youtube = () => (
         sx={{ textAlign: 'center', margin: '50px', display: 'inline-block' }}
       >
         <iframe
-          width="660"
-          height="415"
+          width="590"
+          height="345"
           src="https://www.youtube.com/embed/HFAJkY3Fvks"
           title="YouTube video player"
           frameBorder="0"
@@ -48,8 +48,8 @@ const Youtube = () => (
         sx={{ textAlign: 'center', margin: '50px', display: 'inline-block' }}
       >
         <iframe
-          width="660"
-          height="415"
+          width="590"
+          height="345"
           src="https://www.youtube.com/embed/eUte1z4ItEY"
           title="YouTube video player"
           frameBorder="0"
