@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { Box, AppBar, Toolbar, Typography } from '@mui/material'
-import { inherits } from 'util'
 
 // import { red } from '@mui/material/colors'
 // const color = red[600]

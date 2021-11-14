@@ -1,20 +1,81 @@
 import React from 'react'
-import { Container, Box, Grid, Typography } from '@mui/material'
+import Link from 'next/link'
+import { Box, Typography } from '@mui/material'
 
 export const Footer = () => {
   return (
-    <>
-      <Container sx={{ width: '100vw', position: 'relative'}}>
-        <Box sx={{ bgcolor: '#2d2d2d', height: '240px', margin:'0 -200%', padding:'0 200%' }}>
-          <Typography
-            variant="h5"
-            component="div"
-            sx={{ flexGrow: 1, color: '#fff' }}
-          >
-            footer
-          </Typography>
-        </Box>
-      </Container>
-    </>
+    <footer>
+      <Box
+        sx={{
+          bgcolor: '#2d2d2d',
+          height: '120px',
+          width: '100vw',
+          margin: '0 -0.4%',
+          position: 'absolute',
+        }}
+      >
+        <Typography
+          variant="body1"
+          component="div"
+          sx={{
+            flexGrow: 1,
+            color: '#fff',
+            padding: '15px',
+            textAlign: 'center',
+          }}
+        >
+          <Link href="/">
+            <a
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                margin: '15px',
+              }}
+            >
+              Top
+            </a>
+          </Link>
+          {' | '}
+          <Link href="/youtube">
+            <a
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                margin: '15px',
+              }}
+            >
+              YouTube
+            </a>
+          </Link>
+          {' | '}
+          <Link href="/blog">
+            <a
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                margin: '15px',
+              }}
+            >
+              Blog
+            </a>
+          </Link>
+          {' | '}
+          <Link href="/contact">
+            <a
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                margin: '15px',
+              }}
+            >
+              Contact
+            </a>
+          </Link>
+          <br />
+          <p>© Nansuta 2021</p>
+        </Typography>
+      </Box>
+      {/* </Container> */}
+    </footer>
   )
 }

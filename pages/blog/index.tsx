@@ -15,7 +15,7 @@ const Blog = ({ blog }) => (
     <h1>Blog</h1>
     {blog.map((blog) => (
       <Link href={`/blog/${blog.id}`} key={blog.id}>
-        <Card sx={{ maxWidth: 345, margin: 2, float: 'left' }}>
+        <Card sx={{ maxWidth: 345, margin: 2, display: 'inline-block'}}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -43,8 +43,6 @@ const Blog = ({ blog }) => (
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: 'blog' })
-  console.log(data)
-  console.log(data.contents[0].thumbnail)
   return {
     props: {
       blog: data.contents,
