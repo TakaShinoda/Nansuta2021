@@ -12,10 +12,9 @@ import { omit, formatDate } from '../../utils/omit'
 
 const Blog = ({ blog }) => (
   <Layout title="About | Next.js + TypeScript Example">
-    <h1>Blog</h1>
     {blog.map((blog) => (
       <Link href={`/blog/${blog.id}`} key={blog.id}>
-        <Card sx={{ maxWidth: 345, margin: 2, display: 'inline-block'}}>
+        <Card sx={{ maxWidth: 345, margin: 2, display: 'inline-block', marginTop: '50px'}}>
           <CardActionArea>
             <CardMedia
               component="img"

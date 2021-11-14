@@ -3,8 +3,7 @@ import { Box } from '@mui/material'
 
 const Contact = () => (
   <Layout title="Nansuta Home Page">
-    <h1>Contact</h1>
-    <Box sx={{ textAlign: 'center'}}>
+    <Box sx={{ textAlign: 'center', marginTop: '50px'}}>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScwoOo0tJU9w9X1BRXGR4IImJA0LklmNrCSZiSjq77xkxtt6w/viewform?embedded=true"
         width="750"
