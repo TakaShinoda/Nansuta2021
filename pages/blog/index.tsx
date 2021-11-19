@@ -18,15 +18,20 @@ const Blog = ({ blog }) => (
           sx={{
             maxWidth: 345,
             minWidth: 345,
-            maxHeight: 300,
-            minHeight: 300,
+            maxHeight: 360,
+            minHeight: 360,
             margin: 2,
             display: 'inline-block',
             marginTop: '50px',
+            cursor: 'pointer'
           }}
         >
-          <CardActionArea>
+          {/* <CardActionArea> */}
             <CardMedia
+              sx={{
+                maxHeight: 200,
+                minHeight: 200,
+              }}
               component="img"
               height="140"
               image={blog.thumbnail.url}
@@ -43,7 +48,7 @@ const Blog = ({ blog }) => (
                 {omit(blog.subtitle, 42)}
               </Typography>
             </CardContent>
-          </CardActionArea>
+          {/* </CardActionArea> */}
         </Card>
       </Link>
     ))}
