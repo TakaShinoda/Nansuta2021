@@ -1,20 +1,28 @@
+import Layout from '../../components/layouts/Layout'
 import { client } from '../../lib/client'
 import { GetStaticProps, GetStaticPaths } from 'next'
+import { formatISO8601 } from '../../utils/omit'
 
 const BlogId = ({ blog }) => (
-  <main>
-    <img
-      src={blog.thumbnail.url}
-      alt="Picture of thumbnail"
-    />
-    <h1>{blog.title}</h1>
-    <p>{blog.createdAt}</p>
-    <div
-      dangerouslySetInnerHTML={{
-        __html: `${blog.body}`,
-      }}
-    />
-  </main>
+  <Layout title="Nansuta Home Page">
+    <main style={{ textAlign: 'center' }}>
+      <img
+        style={{
+          width: '35%',
+          height: 'auto',
+        }}
+        src={blog.thumbnail.url}
+        alt="Picture of thumbnail"
+      />
+      <h1>{blog.title}</h1>
+      <p>{formatISO8601(blog.createdAt)}</p>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${blog.body}`,
+        }}
+      />
+    </main>
+  </Layout>
 )
 
 export const getStaticPaths: GetStaticPaths = async () => {

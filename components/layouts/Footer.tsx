@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material'
 
 export const Footer = () => {
   return (
-    <footer style={{ position: 'absolute', bottom: '0', marginBottom: '-7.5px' }}>
+    <footer style={{ position: 'absolute', bottom: '0', marginBottom: '-8px' }}>
       <Box
         sx={{
           bgcolor: '#2d2d2d',
