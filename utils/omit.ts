@@ -13,4 +13,4 @@ export const formatDate = (target: string) => {
 export const formatISO8601 = (dateIso8601: string) =>
   new Date(Date.parse(dateIso8601))
     .toLocaleDateString('ja-JP')
-    .replace(/\//g, '.');
+    .replace(/\//g, '.')
