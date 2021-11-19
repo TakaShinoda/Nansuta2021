@@ -18,6 +18,8 @@ const Blog = ({ blog }) => (
           sx={{
             maxWidth: 345,
             minWidth: 345,
+            maxHeight: 300,
+            minHeight: 300,
             margin: 2,
             display: 'inline-block',
             marginTop: '50px',
