@@ -15,7 +15,7 @@ const BlogId = ({ blog }) => (
         alt="Picture of thumbnail"
       />
       <h1>{blog.title}</h1>
-      <p>{formatISO8601(blog.createdAt)}</p>
+      <p>投稿日: {formatISO8601(blog.createdAt)}{' '}更新日: {formatISO8601(blog.updatedAt)}</p>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,

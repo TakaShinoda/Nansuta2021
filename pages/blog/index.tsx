@@ -35,7 +35,7 @@ const Blog = ({ blog }) => (
               {blog.title}
             </Typography>
             <Typography variant="overline" color="text.secondary">
-              {formatDate(blog.createdAt)}
+              投稿日: {formatDate(blog.createdAt)}{' '}更新日: {formatDate(blog.updatedAt)}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {omit(blog.subtitle, 42)}
