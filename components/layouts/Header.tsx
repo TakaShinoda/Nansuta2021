@@ -1,11 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 import { Box, AppBar, Toolbar, Typography } from '@mui/material'
-
-// import { red } from '@mui/material/colors'
-// const color = red[600]
+import Lottie from 'react-lottie'
+import runnerJson from '../../runner.json'
 
 export const Header = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: runnerJson,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  }
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -15,8 +23,12 @@ export const Header = () => {
           sx={{ boxShadow: 'none' }}
         >
           <Toolbar>
+            <Box sx={{ padding: 1 }}>
+              <Lottie options={defaultOptions} height={45} width={25} />
+            </Box>
+
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-            <Link href="/">
+              <Link href="/">
                 <a style={{ textDecoration: 'none', color: 'inherit' }}>
                   Nansuta
                 </a>
@@ -28,9 +40,7 @@ export const Header = () => {
               sx={{ textAlign: 'right', flexGrow: 0.1 }}
             >
               <Link href="/">
-                <a style={{ textDecoration: 'none', color: 'inherit' }}>
-                  Top
-                </a>
+                <a style={{ textDecoration: 'none', color: 'inherit' }}>Top</a>
               </Link>
             </Typography>
             <Typography
