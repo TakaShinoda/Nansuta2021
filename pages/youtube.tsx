@@ -1,9 +1,25 @@
-import Link from 'next/link'
 import Layout from '../components/layouts/Layout'
-import { Box } from '@mui/material'
+import { Box, Button } from '@mui/material'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Youtube = () => (
   <Layout title="Nansuta Home Page">
+    <Box sx={{ textAlign: 'center' }}>
+      <Box
+        sx={{ textAlign: 'center', margin: '20px', display: 'inline-block' }}
+      >
+        <Button
+          variant="contained"
+          color="error"
+          href="https://www.youtube.com/channel/UCkCZ2nQMYHgy0hEfDmcidew/videos"
+        >
+          チャンネルはこちら
+          <FontAwesomeIcon icon={faYoutube} style={{ margin: 1 }} />
+        </Button>
+      </Box>
+    </Box>
+
     <Box sx={{ textAlign: 'center' }}>
       <Box
         sx={{ textAlign: 'center', margin: '50px', display: 'inline-block' }}
