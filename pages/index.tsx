@@ -1,9 +1,14 @@
 import Layout from '../components/layouts/Layout'
 
-const IndexPage = () => (
-  <Layout title="Nansuta Home Page">
-    <h1 style={{minHeight: '100vh'}}>Hello👋👋👋👋👋👋</h1>
-  </Layout>
-)
+
+import { Vanta } from '../components/Vanta'
+
+const IndexPage = () => {
+  return (
+    <Layout title="Nansuta Home Page">
+      <Vanta />
+    </Layout>
+  )
+}
 
 export default IndexPage
